@@ -1,4 +1,7 @@
 import { useRef, useState } from "react";
+import landingPage1 from "../../assets/landing-page-1.jpg";
+import landingPage2 from "../../assets/landing-page-2.jpg";
+import landingPage3 from "../../assets/landing-page-3.jpeg";
 import { useNavigate } from "react-router";
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
@@ -185,9 +188,11 @@ export function Welcome() {
               </ul>
             </div>
             <div className="flex-1 w-full">
-              <div className="bg-gray-100 rounded-2xl aspect-[4/3] flex items-center justify-center">
-                <ShoppingBag className="w-16 h-16 text-gray-300" />
-              </div>
+              <img
+                src={landingPage1}
+                alt="Person photographing sneakers to sell"
+                className="w-full rounded-2xl aspect-[4/3] object-cover"
+              />
             </div>
           </div>
 
@@ -213,9 +218,11 @@ export function Welcome() {
               </ul>
             </div>
             <div className="flex-1 w-full">
-              <div className="bg-gray-100 rounded-2xl aspect-[4/3] flex items-center justify-center">
-                <Shield className="w-16 h-16 text-gray-300" />
-              </div>
+              <img
+                src={landingPage2}
+                alt="Students on campus"
+                className="w-full rounded-2xl aspect-[4/3] object-cover"
+              />
             </div>
           </div>
 
@@ -241,9 +248,11 @@ export function Welcome() {
               </ul>
             </div>
             <div className="flex-1 w-full">
-              <div className="bg-gray-100 rounded-2xl aspect-[4/3] flex items-center justify-center">
-                <MapPin className="w-16 h-16 text-gray-300" />
-              </div>
+              <img
+                src={landingPage3}
+                alt="Students moving in on campus"
+                className="w-full rounded-2xl aspect-[4/3] object-cover"
+              />
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import {
   Welcome,
   CheckEmail,
@@ -15,7 +15,7 @@ import {
   Guidelines,
 } from "./pages";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     Component: Welcome,
